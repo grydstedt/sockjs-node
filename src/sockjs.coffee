@@ -32,6 +32,7 @@ class App extends webjs.GenericApp
         return true
 
     handle_404: (req, res) ->
+        console.log('404')
         res.setHeader('content-type', 'text/plain; charset=UTF-8')
         res.writeHead(404)
         res.end('404 Error: Page not found\n')
